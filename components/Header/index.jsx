@@ -7,14 +7,14 @@ function Header () {
                 <a href="http://localhost:3000"><img src="./images/musicCornerLogo.jpg" alt="logo of music corner" /></a>
             </div>
             <div className={styles.headerMenu}>
-                <a>String</a>
-                <a>Percussion</a>
-                <a>Brass</a>
-                <a>Woodwind</a>
-                <a>Plucked</a>
+                <a href="http://localhost:3000">String</a>
+                <a href="http://localhost:3000">Percussion</a>
+                <a href="http://localhost:3000">Brass</a>
+                <a href="http://localhost:3000">Woodwind</a>
+                <a href="http://localhost:3000">Plucked</a>
             </div>
-            <div className={styles.headerQuizes}>
-                <a>Quizzes</a>
+            <div className={styles.headerQuizzes}>
+                <a href="http://localhost:3000">Quizzes</a>
             </div>
         </div>
     )

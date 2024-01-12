@@ -7,10 +7,16 @@
 
 .headerMenu a {
     margin: 30px;
+    font-weight: bold;
 }
 
-
+.headerMenu a:hover {
+    color: #fdc500;
+}
 
 .headerQuizzes {
+    color: red;
+    font-size: 23px;
+    font-weight: bold;
 
 }
