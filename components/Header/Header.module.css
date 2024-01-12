@@ -2,21 +2,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px;
+    margin: 30px;
 }
 
 .headerMenu a {
     margin: 30px;
     font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
 
 .headerMenu a:hover {
     color: #fdc500;
 }
 
-.headerQuizzes {
+.headerQuizzes a {
     color: red;
     font-size: 23px;
     font-weight: bold;
+    text-decoration: none;
 
+}
+.headerQuizzes a:hover {
+    color: #6fdcf4;
+    text-shadow: 0 0 5px #6fdcf4;
 }
