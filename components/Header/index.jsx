@@ -7,7 +7,7 @@ function Header () {
                 <a href="http://localhost:3000"><img src="./images/musicCornerLogo.jpg" alt="logo of music corner" /></a>
             </div>
             <div className={styles.headerMenu}>
-                <a href="http://localhost:3000">Strings</a>
+                <a href="http://localhost:3000/strings">Strings</a>
                 <a href="http://localhost:3000">Percussions</a>
                 <a href="http://localhost:3000">Brasses</a>
                 <a href="http://localhost:3000">Woodwinds</a>
