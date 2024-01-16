@@ -2,7 +2,7 @@ import { useRef } from "react";
 import styles from "./Instrument.module.css"
 import instruments from "@/instruments";
 
-function Instrument () {
+function Instrument (props) {
     const audioRef = useRef();
     const start = () => {
         if (audioRef.current) {
@@ -15,17 +15,17 @@ function Instrument () {
         
         <div className={styles.instrumentContainer}>
             <div className={styles.instrumentTitle}>
-                <h1>{instruments[0].name}</h1>
+                <h1>{props.name}</h1>
             </div>
             <div>
                 <button className={styles.instrumentPlay} onClick={start}>►</button>
             </div>
             <div className={styles.instrumentImage}>
-                <img src={instruments[0].imgURL} alt={instruments[0].name}></img>
-                <audio ref={audioRef} src={instruments[0].audio} />
+                <img src={props.imgURL} alt={props.name}></img>
+                <audio ref={audioRef} src={props.audio} />
             </div>
             <div className={styles.instrumentInfo}>
-                <p>{instruments[0].description}</p>
+                <p>{props.description}</p>
             </div>
         </div>
     )
