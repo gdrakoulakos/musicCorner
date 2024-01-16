@@ -1,8 +1,8 @@
-import Instruments from "../../components/Instruments"
+import Instrument from "../../components/Instrument"
 
 function Strings () {
     return (
-        <Instruments />
+        <Instrument />
     )
 }
 
