@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import styles from "./Instrument.module.css"
-import instruments from "@/instruments";
+import YoutubeEmbed from "./YoutubeEmbed"
 
 function Instrument (props) {
     const audioRef = useRef();
@@ -26,6 +26,9 @@ function Instrument (props) {
             </div>
             <div className={styles.instrumentInfo}>
                 <p>{props.description}</p>
+            </div>
+            <div>
+                <YoutubeEmbed embedId={props.youtubeURL} />
             </div>
         </div>
     )
