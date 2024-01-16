@@ -1,9 +1,10 @@
 import instruments from "@/instruments";
-import Instrument from "../../components/Instrument"
+import Instrument from "../../components/instrument"
 
-function createInstrument (instrument) {
-    return (
-        <Instrument 
+function Strings () {
+    return instruments.map((instrument) => (
+            <Instrument 
+            key={instrument.id}
             id={instrument.id}
             category={instrument.category}
             name={instrument.name}
@@ -11,15 +12,8 @@ function createInstrument (instrument) {
             audio={instrument.audio}
             description={instrument.description}
             youtubeURL={instrument.youtubeURL}
-        />
-    )
-}
-
-function Strings () {
-    return (
-       <div>
-        {instruments.map(createInstrument)}
-       </div>
+            />
+        )
     )
 }
 
