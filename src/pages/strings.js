@@ -8,7 +8,7 @@ function Strings () {
             id={instrument.id}
             category={instrument.category}
             name={instrument.name}
-            imgURL={instrument.imgURL}
+            imagePath={instrument.imagePath}
             audio={instrument.audio}
             description={instrument.description}
             youtubeURL={instrument.youtubeURL}

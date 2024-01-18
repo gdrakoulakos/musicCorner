@@ -14,7 +14,7 @@ function Header () {
                 <a href="http://localhost:3000">Plucked</a>
             </div>
             <div className={styles.headerQuizzes}>
-                <a href="http://localhost:3000">Quizzes</a>
+                <a href="http://localhost:3000/quizzes">Quizzes</a>
             </div>
         </div>
     )

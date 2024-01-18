@@ -21,7 +21,7 @@ function Instrument (props) {
                 <button className={styles.instrumentPlay} onClick={start}>►</button>
             </div>
             <div className={styles.instrumentImage}>
-                <img src={props.imgURL} alt={props.name}></img>
+                <img src={props.imagePath} alt={props.name}></img>
                 <audio ref={audioRef} src={props.audio} />
             </div>
             <div className={styles.instrumentInfo}>
