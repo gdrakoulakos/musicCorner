@@ -12,6 +12,7 @@ function Quizzes () {
         answer2={question.answer2}
         answer3={question.answer3}
         answer4={question.answer4}
+        correctAnswer={question.correctAnswer}
         />
     )
 )
