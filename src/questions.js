@@ -1,7 +1,7 @@
 const questions = [
     {
         id: 1,
-        question: "1) How many notes does Eastern music have?",
+        question: "1) How many notes does Western music have?",
         imagePath: "./images/quizzes/question1.jpg",
         answer1: "5",
         answer2: "6",
@@ -10,7 +10,7 @@ const questions = [
     },
     {
         id: 2,
-        question: "2) Which of the following symbols represents the 'sharp' of a musical note",
+        question: "2) Which of the following symbols represents the 'sharp' of a musical note?",
         imagePath: "./images/quizzes/question2.jpg",
         answer1: "#",
         answer2: "♭",
@@ -19,7 +19,7 @@ const questions = [
     },
     {
         id: 3,
-        question: "3) Which of the following symbols represents the flat of a musical note",
+        question: "3) Which of the following symbols represents the 'flat' of a musical note?",
         imagePath: "./images/quizzes/question3.jpg",
         answer1: "#",
         answer2: "♭",
@@ -28,7 +28,7 @@ const questions = [
     },
     {
         id: 4,
-        question: "4) Which note is displayed in the following image?",
+        question: "4) Which musical note is displayed in the following image?",
         imagePath: "./images/quizzes/question4.jpg",
         answer1: "C (do)",
         answer2: "E (mi)",
@@ -37,7 +37,7 @@ const questions = [
     },
     {
         id: 5,
-        question: "5) What is the value of the following note?",
+        question: "5) What is the value of the following musical note?",
         imagePath: "./images/quizzes/question5.jpg",
         answer1: "Whole",
         answer2: "Half",
@@ -46,21 +46,21 @@ const questions = [
     },
     {
         id: 6,
-        question: "6) Find the mistake of the following image",
+        question: "6) Find the mistake of the following image:",
         imagePath: "./images/quizzes/question6.jpg",
-        answer1: "All notes are placed incorrectly on the score",
+        answer1: "All musical notes have been placed incorrectly on the score",
         answer2: "The music scores don't have numbers on them",
         answer3: "A music score has 4 lines. Not 6",
         answer4: "A music score has 5 lines. Not 6"
     },
     {
         id: 7,
-        question: "7) Which note is displayed to the following image",
+        question: "7) Which musical note is displayed to the following image?",
         imagePath: "./images/quizzes/question7.jpg",
-        answer1: "C (do)",
+        answer1: "D (re)",
         answer2: "E (mi)",
-        answer3: "D# (re#)",
-        answer4: "A♭ (la♭)"
+        answer3: "G# (sol#)",
+        answer4: "F♭ (Fa♭)"
     },
     {
         id: 8,
