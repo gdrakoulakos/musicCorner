@@ -1,6 +1,7 @@
 import questions from "@/questions";
 import Question from "../../components/question"
 import { useState } from "react";
+import styles from "../styles/Quizzes.module.css"
 
 function Quizzes () {
     const [quizResult, setQuizResult] = useState (0);
@@ -11,7 +12,7 @@ function Quizzes () {
     
     return (
         <>
-        <p style={{textAlign: 'right', fontSize: '30px'}}>{quizResult} of 10</p>
+        <p className={styles.score}>Score: {quizResult} of 10</p>
         {questions.map((question) => (
         <Question 
         key={question.id}
