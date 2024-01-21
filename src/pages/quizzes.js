@@ -1,8 +1,18 @@
 import questions from "@/questions";
 import Question from "../../components/question"
+import { useState } from "react";
 
 function Quizzes () {
-    return questions.map((question) => (
+    const [quizResult, setQuizResult] = useState (0);
+
+    function handleQuizResult () {
+        setQuizResult(quizResult+1)
+    }
+    
+    return (
+        <>
+        <p>{quizResult} of 10</p>
+        {questions.map((question) => (
         <Question 
         key={question.id}
         id={question.id}
@@ -13,9 +23,11 @@ function Quizzes () {
         answer3={question.answer3}
         answer4={question.answer4}
         correctAnswer={question.correctAnswer}
+        onQuizResult={handleQuizResult}
         />
-    )
-)
+            ))}
+        </>
+    );
 }
 
 export default Quizzes;
