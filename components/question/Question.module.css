@@ -1,5 +1,7 @@
 .questionsContainer {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .answersContainer {
@@ -21,4 +23,5 @@
 
 .answersContainer span:hover  {
     color: #fdc500;
+    cursor: pointer;
 }

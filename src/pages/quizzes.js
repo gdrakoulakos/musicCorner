@@ -11,7 +11,7 @@ function Quizzes () {
     
     return (
         <>
-        <p>{quizResult} of 10</p>
+        <p style={{textAlign: 'right', fontSize: '30px'}}>{quizResult} of 10</p>
         {questions.map((question) => (
         <Question 
         key={question.id}
