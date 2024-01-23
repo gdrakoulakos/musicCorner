@@ -1,6 +1,18 @@
 .score {
+    margin-top: 80px;
     position: fixed;
     font-size: 25px;
     font-weight: bold;
     color: #d11210;
+    padding: 10px;
 }
+
+.resultMessage {
+    position: fixed;
+    text-align: center;
+    background-color: #3bd179;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+  }

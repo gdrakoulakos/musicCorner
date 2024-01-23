@@ -15,7 +15,9 @@ function Question (props) {
         setSelectedAnswer(clickedAnswer);
         if (clickedAnswer === props.correctAnswer && answerResult === null) {
             setAnswerResult(correctAnswer)
-            props.onQuizResult();
+            props.onCorrectAnswers();
+            props.onAnsweredQuestions();
+            props.onResultMessage();
             }                     
         else if (clickedAnswer === props.correctAnswer && answerResult !== null) {
             setAnswerResult(doubleSelectedAnswer)
@@ -25,6 +27,8 @@ function Question (props) {
         }
         else {
             setAnswerResult(incorrectAnswer)
+            props.onAnsweredQuestions();
+            props.onResultMessage();
         }
     }
 
