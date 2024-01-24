@@ -11,7 +11,7 @@ const questions = [
     },
     {
         id: 2,
-        question: "2) Which of the following symbols represents the 'sharp' of a musical note?",
+        question: "2) Which of the following symbols represents the 'sharp'?",
         imagePath: "./images/quizzes/question2.jpg",
         answer1: "#",
         answer2: "♭",
@@ -21,7 +21,7 @@ const questions = [
     },
     {
         id: 3,
-        question: "3) Which of the following symbols represents the 'flat' of a musical note?",
+        question: "3) Which of the following symbols represents the 'flat'?",
         imagePath: "./images/quizzes/question3.jpg",
         answer1: "#",
         answer2: "♭",
@@ -31,7 +31,7 @@ const questions = [
     },
     {
         id: 4,
-        question: "4) Which musical note is displayed in the following image?",
+        question: "4) Which note is displayed in the following image?",
         imagePath: "./images/quizzes/question4.jpg",
         answer1: "C (do)",
         answer2: "E (mi)",
@@ -41,7 +41,7 @@ const questions = [
     },
     {
         id: 5,
-        question: "5) What is the value of the following musical note?",
+        question: "5) What is the value in the following note?",
         imagePath: "./images/quizzes/question5.jpg",
         answer1: "Whole",
         answer2: "Half",
@@ -51,7 +51,7 @@ const questions = [
     },
     {
         id: 6,
-        question: "6) Find the mistake of the following image:",
+        question: "6) Find the mistake in the following image:",
         imagePath: "./images/quizzes/question6.jpg",
         answer1: "All musical notes have been placed incorrectly on the score",
         answer2: "A music score has 5 lines. Not 6",
@@ -61,7 +61,7 @@ const questions = [
     },
     {
         id: 7,
-        question: "7) Which musical note is displayed to the following image?",
+        question: "7) Which note is displayed on the following image?",
         imagePath: "./images/quizzes/question7.jpg",
         answer1: "G# (sol#)",
         answer2: "E (mi)",
@@ -71,7 +71,7 @@ const questions = [
     },
     {
         id: 8,
-        question: "8) What is the value of the following note?",
+        question: "8) What is the value in the following note?",
         imagePath: "./images/quizzes/question8.jpg",
         answer1: "Whole",
         answer2: "Half",
