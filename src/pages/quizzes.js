@@ -22,26 +22,20 @@ function Quizzes () {
     }
 
     function handleResultMessage () {
-        console.log("handleResultMessage");
         if (answeredQuestions === 10 && correctAnswers === 10) {
             setResultMessage("Congratulations! You're a musical genius!")
-            console.log("10");
         } 
         else if (answeredQuestions === 10 && correctAnswers ===9) {
             setResultMessage("Incredible! You're a harmony prodigy!")
-            console.log("9");
         } 
         else if (answeredQuestions === 10 && correctAnswers > 6) {
             setResultMessage("Fantastic job! You're a true harmonic explorer.")
-            console.log("6");
         } 
         else if (answeredQuestions === 10 && correctAnswers > 3) {
             setResultMessage("Great effort! You're on your way to becoming a melody explorer")
-            console.log("4");
         }
         else if (answeredQuestions === 10 && correctAnswers < 3){
             setResultMessage("Nice try! You're just starting your musical journey.")
-            console.log("3");
         }
     }
 
@@ -66,7 +60,8 @@ function Quizzes () {
         onAnsweredQuestions={handleAnsweredQuestions}
         onResultMessage={handleResultMessage}
         />
-            ))}
+            ))
+        }
         
         </>
     );
