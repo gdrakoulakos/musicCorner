@@ -3,8 +3,6 @@ import styles from "./Question.module.css";
 
 function Question (props) {
 
-    
-    const [selectedAnswer, setSelectedAnswer] = useState (); 
     const [answerResult, setAnswerResult] = useState (null);
     const [colorAnswer, setColorAnswer] = useState (""); 
     
@@ -14,7 +12,6 @@ function Question (props) {
 
     function handleSelectedAnswer (event) {
         const clickedAnswer=event.target.innerText;
-        setSelectedAnswer(clickedAnswer);
         if (clickedAnswer === props.correctAnswer && answerResult === null) {
             setAnswerResult(correctAnswer);
             props.onCorrectAnswers();
