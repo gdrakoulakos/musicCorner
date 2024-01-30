@@ -39,7 +39,7 @@ function Quizzes () {
         }
     }
 
-    
+
     return (
         <>
         <p className={styles.resultMessage}>{resultMessage}</p>
