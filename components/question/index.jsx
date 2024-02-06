@@ -44,7 +44,7 @@ function Question (props) {
                     <span style={{backgroundColor:answerBackgroundColor}} onClick={handleClickedAnswer}>{props.answer2}</span>
                     <span style={{backgroundColor:answerBackgroundColor}} onClick={handleClickedAnswer}>{props.answer3}</span>
                     <span style={{backgroundColor:answerBackgroundColor}} onClick={handleClickedAnswer}>{props.answer4}</span>
-                    <div style={{backgroundColor:answerBackgroundColor, borderRadius:20, alignSelf:'center', padding:10}}>{answerResult}</div>
+                    <div className={styles.answerComment} style={{backgroundColor:answerBackgroundColor}}>{answerResult}</div>
                 </div>
             </div>
         </>

@@ -25,3 +25,11 @@
     color: #fdc500;
     cursor: pointer;
 }
+
+.answerComment {
+    padding: 10px;
+    align-self: center;
+    border-radius:10px;
+    font-size: 15px;
+    font-weight: bold;
+}

@@ -14,36 +14,37 @@ function Quizzes () {
     
 
     function handleCorrectAnswers () {
-        setCorrectAnswers(correctAnswers+1)
+        setCorrectAnswers(correctAnswers+1);
     }
 
     function handleAnsweredQuestions () {
-        setAnsweredQuestions(answeredQuestions+1)
+        setAnsweredQuestions(answeredQuestions+1);
     }
 
     function handleResultMessage () {
         if (answeredQuestions === 10 && correctAnswers === 10) {
-            setResultMessage("Congratulations! You're a musical genius!")
+            setResultMessage("Congratulations!");
         } 
         else if (answeredQuestions === 10 && correctAnswers ===9) {
-            setResultMessage("Incredible! You're a harmony prodigy!")
+            setResultMessage("Incredible!");
         } 
         else if (answeredQuestions === 10 && correctAnswers > 6) {
-            setResultMessage("Fantastic job! You're a true harmonic explorer.")
+            setResultMessage("Fantastic job!");
         } 
         else if (answeredQuestions === 10 && correctAnswers > 3) {
-            setResultMessage("Great effort! You're on your way to becoming a melody explorer")
+            setResultMessage("Great effort!")
         }
         else if (answeredQuestions === 10 && correctAnswers < 3){
-            setResultMessage("Nice try! You're just starting your musical journey.")
+            setResultMessage("Nice try!");
         }
     }
 
 
     return (
         <>
-        <p className={styles.resultMessage}>{resultMessage}</p>
-        <p className={styles.score}>Score: {correctAnswers} of {answeredQuestions}</p>
+        
+        <div className={styles.score}>Score: {correctAnswers} of {answeredQuestions}</div>
+        {resultMessage && <div className={styles.resultMessage}>{resultMessage}</div>}
         
         {questions.map((question) => (
         <Question 
