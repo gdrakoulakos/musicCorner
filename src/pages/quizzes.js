@@ -42,7 +42,7 @@ function Quizzes () {
 
     return (
         <>
-        
+
         <div className={styles.score}>Score: {correctAnswers} of {answeredQuestions}</div>
         {resultMessage && <div className={styles.resultMessage}>{resultMessage}</div>}
         
