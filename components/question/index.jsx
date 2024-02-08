@@ -30,7 +30,7 @@ function Question (props) {
             setAnswerResult(incorrectAnswer);
             props.onAnsweredQuestions();
             props.onResultMessage();
-            setAnswerBackgroundColor("#ffd0ac");
+            setAnswerBackgroundColor("#ffaeac");
         }
     }
 
