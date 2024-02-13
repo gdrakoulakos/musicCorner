@@ -3,46 +3,46 @@
     transform: rotate(290deg)
 }
 
-#forthString {
+#fourthString {
     stroke: #ff00006b;
-    stroke-width: 8;
+    stroke-width: 14;
 }
 
-#forthString:hover{
+#fourthString:hover{
     stroke: #fff0006b;
-    stroke-width: 8;
+    stroke-width: 14;
     cursor: pointer;
 }
 
 #thirdString {
     stroke: #10ff006b;
-    stroke-width: 8;
+    stroke-width: 14;
 }
 
 #thirdString:hover{
     stroke: #fff0006b;
-    stroke-width: 8;
+    stroke-width: 14;
     cursor: pointer;
 }
 
 #secondString {
     stroke: #0070ff6b;
-    stroke-width: 8;
+    stroke-width: 14;
 }
 
 #secondString:hover{
     stroke: #fff0006b;
-    stroke-width: 8;
+    stroke-width: 14;
     cursor: pointer;
 }
 
 #firstString {
     stroke: #ff00f56b;
-    stroke-width: 8;
+    stroke-width: 14;
 }
 
 #firstString:hover{
     stroke: #fff0006b;
-    stroke-width: 8;
+    stroke-width: 14;
     cursor: pointer;
 }

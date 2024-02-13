@@ -3,6 +3,7 @@ import Instrument from "../../components/instrument"
 import DoubleBassSvg from "../../components/svg/strings/doubleBassSvg/index";
 
 function Strings () {
+    
     return (
         <>
         <div>

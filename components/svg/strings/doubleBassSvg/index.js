@@ -1,12 +1,33 @@
 import styles from './DoubleBassSvg.module.css'
 
-const DoubleBassSvg = (props) => (
+const playNoteE = () => {
+  const audio = new Audio('/audio/instruments/bass/e_bass.mp3');
+  audio.play();
+};
+
+const playNoteA = () => {
+  const audio = new Audio('/audio/instruments/bass/a_bass.mp3');
+  audio.play();
+};
+
+const playNoteD = () => {
+  const audio = new Audio('/audio/instruments/bass/d_bass.mp3');
+  audio.play();
+};
+
+const playNoteG = () => {
+  const audio = new Audio('/audio/instruments/bass/g_bass.mp3');
+  audio.play();
+};
+
+function DoubleBassSvg(props) {
+return (
     <svg
       id={styles.doubleBass}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={683.622 * 0.75}
-      height={819.932 * 0.75}  
+      width={683.622 * 0.85}
+      height={819.932 * 0.85}  
       viewBox="0 0 683.622 819.932"  
       {...props}
     >
@@ -116,7 +137,6 @@ const DoubleBassSvg = (props) => (
           gradientUnits="userSpaceOnUse"
         />
       </defs>
-      
       <path
         d="m431.913 95.202-12.256 21.571c-5.415-.14-5.884 4.276-5.429 7.684 1.343 7.177 5.542 8.21 9.071 3.134 1.57-2.945 2.373-6.008-1.235-8.97 4.984-8.918 8.904-13.948 12.774-21.455l-2.925-1.964z"
         style={{
@@ -434,11 +454,13 @@ const DoubleBassSvg = (props) => (
         }}
         transform="rotate(37.401 569.629 342.712)"
       />
-        <line id={styles.forthString} x1="600" y1="115" x2="275" y2="580"></line>  
-        <line id={styles.thirdString} x1="605" y1="120" x2="290" y2="590"></line>
-        <line id={styles.secondString} x1="610" y1="125" x2="300" y2="600"></line>
-        <line id={styles.firstString} x1="615" y1="130" x2="310" y2="605"></line> 
+        <line id={styles.fourthString} onClick={playNoteE} x1="600" y1="115" x2="275" y2="580"></line> 
+        <line id={styles.thirdString} onClick={playNoteA} x1="605" y1="120" x2="290" y2="590"></line>
+        <line id={styles.secondString} onClick={playNoteD} x1="610" y1="125" x2="300" y2="600"></line>
+        <line id={styles.firstString} onClick={playNoteG} x1="615" y1="130" x2="310" y2="605"></line> 
     </svg>
-  )
+);
+      }
+
   export default DoubleBassSvg;
   
