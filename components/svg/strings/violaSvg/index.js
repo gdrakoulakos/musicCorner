@@ -1,32 +1,31 @@
-import styles from './ViolinSvg.module.css'
+import styles from './ViolaSvg.module.css'
 
 const playNoteE = () => {
-   const audio = new Audio('/audio/instruments/violin/g_violin.mp3');
+   const audio = new Audio('/audio/instruments/viola/c_viola.mp3');
    audio.play();
  };
  
  const playNoteA = () => {
-   const audio = new Audio('/audio/instruments/violin/d_violin.mp3');
+   const audio = new Audio('/audio/instruments/viola/g_viola.mp3');
    audio.play();
  };
  
  const playNoteD = () => {
-   const audio = new Audio('/audio/instruments/violin/a_violin.mp3');
+   const audio = new Audio('/audio/instruments/viola/d_viola.mp3');
    audio.play();
  };
  
  const playNoteG = () => {
-   const audio = new Audio('/audio/instruments/violin/e_violin.mp3');
+   const audio = new Audio('/audio/instruments/viola/a_viola.mp3');
    audio.play();
  };
 
- const ViolinSvg = (props) => (
+ const ViolanSvg = (props) => (
    <svg
      xmlns="http://www.w3.org/2000/svg"
      xmlnsXlink="http://www.w3.org/1999/xlink"
-     width={500 * 0.80}
-     height={500 * 0.80}
-     viewBox="0 0 500 500" 
+     width={500}
+     height={500}
      {...props}
    >
      <defs>
@@ -508,5 +507,5 @@ const playNoteE = () => {
       <line id={styles.firstString} onClick={playNoteG} x1="115" y1="90" x2="295" y2="240"></line>
    </svg>
  )
- export default ViolinSvg;
+ export default ViolanSvg;
  

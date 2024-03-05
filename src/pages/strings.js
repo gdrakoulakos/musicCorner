@@ -3,6 +3,7 @@ import Instrument from "../../components/instrument"
 import DoubleBassSvg from "../../components/svg/strings/doubleBassSvg/index";
 import CelloSvg from "../../components/svg/strings/celloSvg";
 import ViolinSvg from "../../components/svg/strings/violinSvg";
+import ViolanSvg from "../../components/svg/strings/violaSvg";
 
 function Strings () {
     
@@ -12,6 +13,7 @@ function Strings () {
             
             <DoubleBassSvg />
             <CelloSvg />
+            <ViolanSvg />
             <ViolinSvg />
         </div>
                 {instruments.map((instrument) => (
