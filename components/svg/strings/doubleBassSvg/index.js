@@ -1,21 +1,21 @@
 import styles from './DoubleBassSvg.module.css'
 
-const playNoteE = () => {
+const playString4 = () => {
   const audio = new Audio('/audio/instruments/bass/e_bass.mp3');
   audio.play();
 };
 
-const playNoteA = () => {
+const playString3 = () => {
   const audio = new Audio('/audio/instruments/bass/a_bass.mp3');
   audio.play();
 };
 
-const playNoteD = () => {
+const playString2 = () => {
   const audio = new Audio('/audio/instruments/bass/d_bass.mp3');
   audio.play();
 };
 
-const playNoteG = () => {
+const playString1 = () => {
   const audio = new Audio('/audio/instruments/bass/g_bass.mp3');
   audio.play();
 };
@@ -454,10 +454,10 @@ return (
         }}
         transform="rotate(37.401 569.629 342.712)"
       />
-        <line id={styles.fourthString} onClick={playNoteE} x1="600" y1="115" x2="275" y2="580"></line> 
-        <line id={styles.thirdString} onClick={playNoteA} x1="605" y1="120" x2="290" y2="590"></line>
-        <line id={styles.secondString} onClick={playNoteD} x1="610" y1="125" x2="300" y2="600"></line>
-        <line id={styles.firstString} onClick={playNoteG} x1="615" y1="130" x2="310" y2="605"></line> 
+        <line id={styles.fourthString} onClick={playString4} x1="600" y1="115" x2="275" y2="580"></line> 
+        <line id={styles.thirdString} onClick={playString3} x1="605" y1="120" x2="290" y2="590"></line>
+        <line id={styles.secondString} onClick={playString2} x1="610" y1="125" x2="300" y2="600"></line>
+        <line id={styles.firstString} onClick={playString1} x1="615" y1="130" x2="310" y2="605"></line> 
     </svg>
 );
       }

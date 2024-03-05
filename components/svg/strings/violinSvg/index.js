@@ -1,21 +1,21 @@
 import styles from './ViolinSvg.module.css'
 
-const playNoteE = () => {
+const playString4 = () => {
    const audio = new Audio('/audio/instruments/violin/g_violin.mp3');
    audio.play();
  };
  
- const playNoteA = () => {
+ const playString3 = () => {
    const audio = new Audio('/audio/instruments/violin/d_violin.mp3');
    audio.play();
  };
  
- const playNoteD = () => {
+ const playString2 = () => {
    const audio = new Audio('/audio/instruments/violin/a_violin.mp3');
    audio.play();
  };
  
- const playNoteG = () => {
+ const playString1 = () => {
    const audio = new Audio('/audio/instruments/violin/e_violin.mp3');
    audio.play();
  };
@@ -502,10 +502,10 @@ const playNoteE = () => {
          strokeOpacity: 1,
        }}
      />
-      <line id={styles.fourthString} onClick={playNoteE} x1="100" y1="90" x2="270" y2="260"></line> 
-      <line id={styles.thirdString} onClick={playNoteA} x1="105" y1="90" x2="275" y2="250"></line>
-      <line id={styles.secondString} onClick={playNoteD} x1="110" y1="90" x2="285" y2="245"></line>
-      <line id={styles.firstString} onClick={playNoteG} x1="115" y1="90" x2="295" y2="240"></line>
+      <line id={styles.fourthString} onClick={playString4} x1="100" y1="90" x2="270" y2="260"></line> 
+      <line id={styles.thirdString} onClick={playString3} x1="105" y1="90" x2="275" y2="250"></line>
+      <line id={styles.secondString} onClick={playString2} x1="110" y1="90" x2="285" y2="245"></line>
+      <line id={styles.firstString} onClick={playString1} x1="115" y1="90" x2="295" y2="240"></line>
    </svg>
  )
  export default ViolinSvg;

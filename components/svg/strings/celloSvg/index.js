@@ -1,21 +1,21 @@
 import styles from './CelloSvg.module.css'
 
-const playNoteE = () => {
+const playString4 = () => {
    const audio = new Audio('/audio/instruments/cello/c_cello.mp3');
    audio.play();
  };
  
- const playNoteA = () => {
+ const playString3 = () => {
    const audio = new Audio('/audio/instruments/cello/g_cello.mp3');
    audio.play();
  };
  
- const playNoteD = () => {
+ const playString2 = () => {
    const audio = new Audio('/audio/instruments/cello/d_cello.mp3');
    audio.play();
  };
  
- const playNoteG = () => {
+ const playString1 = () => {
    const audio = new Audio('/audio/instruments/cello/a_cello.mp3');
    audio.play();
  };
@@ -392,10 +392,10 @@ const CelloSvg = (props) => (
       }}
       transform="translate(-227.547 -58.142)"
     />
-      <line id={styles.fourthString} onClick={playNoteE} x1="130" y1="90" x2="130" y2="580"></line> 
-      <line id={styles.thirdString} onClick={playNoteA} x1="135" y1="90" x2="140" y2="580"></line>
-      <line id={styles.secondString} onClick={playNoteD} x1="140" y1="90" x2="150" y2="580"></line>
-      <line id={styles.firstString} onClick={playNoteG} x1="145" y1="90" x2="160" y2="580"></line>
+      <line id={styles.fourthString} onClick={playString4} x1="130" y1="90" x2="130" y2="580"></line> 
+      <line id={styles.thirdString} onClick={playString3} x1="135" y1="90" x2="140" y2="580"></line>
+      <line id={styles.secondString} onClick={playString2} x1="140" y1="90" x2="150" y2="580"></line>
+      <line id={styles.firstString} onClick={playString1} x1="145" y1="90" x2="160" y2="580"></line>
   </svg>
 )
 export default CelloSvg
