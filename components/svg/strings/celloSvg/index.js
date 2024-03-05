@@ -392,10 +392,10 @@ const CelloSvg = (props) => (
       }}
       transform="translate(-227.547 -58.142)"
     />
-      <line id={styles.fourthString} onClick={playString4} x1="130" y1="90" x2="130" y2="580"></line> 
-      <line id={styles.thirdString} onClick={playString3} x1="135" y1="90" x2="140" y2="580"></line>
-      <line id={styles.secondString} onClick={playString2} x1="140" y1="90" x2="150" y2="580"></line>
-      <line id={styles.firstString} onClick={playString1} x1="145" y1="90" x2="160" y2="580"></line>
+      <line id={styles.fourthString} onClick={playString4} x1="130" y1="90" x2="130" y2="510"></line> 
+      <line id={styles.thirdString} onClick={playString3} x1="135" y1="90" x2="140" y2="510"></line>
+      <line id={styles.secondString} onClick={playString2} x1="140" y1="90" x2="150" y2="510"></line>
+      <line id={styles.firstString} onClick={playString1} x1="145" y1="90" x2="160" y2="510"></line>
   </svg>
 )
 export default CelloSvg
