@@ -1,15 +1,20 @@
 import instruments from "@/instruments";
 import Instrument from "../../components/instrument"
 import DoubleBassSvg from "../../components/svg/strings/doubleBassSvg/index";
+import CelloSvg from "../../components/svg/strings/celloSvg";
+import ViolinSvg from "../../components/svg/strings/violinSvg";
 
 function Strings () {
     
     return (
         <>
         <div>
+            
             <DoubleBassSvg />
+            <CelloSvg />
+            <ViolinSvg />
         </div>
-        {instruments.map((instrument) => (
+                {instruments.map((instrument) => (
             <Instrument 
             key={instrument.id}
             id={instrument.id}
